@@ -121,3 +121,13 @@ The same application will progressively be extended to learn:
 Python → Flask → Docker → Docker Compose → Linux VM deployment → CI/CD → Kubernetes → Monitoring.
 
 **Learning principle:** Build, understand, troubleshoot, document, and then move forward.
+
+
+### Day 2 — Project Structure
+
+- Created `templates/` directory for Flask HTML templates.
+- Created `static/` directory for CSS and static assets.
+- Created `static/images/` for application images.
+- Prepared the project structure for frontend integration.
+
+**Next:** Connect Flask with HTML templates using `render_template()` and build the AutoHub homepage.
