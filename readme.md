@@ -131,3 +131,7 @@ Python → Flask → Docker → Docker Compose → Linux VM deployment → CI/CD
 - Prepared the project structure for frontend integration.
 
 **Next:** Connect Flask with HTML templates using `render_template()` and build the AutoHub homepage.
+
+### Day 3 ##
+Added the index.hmtl and routed the index.html in flask
+next python list in html doc and routing it in flask.py
