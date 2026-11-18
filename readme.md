@@ -135,3 +135,6 @@ Python → Flask → Docker → Docker Compose → Linux VM deployment → CI/CD
 ### Day 3 ##
 Added the index.hmtl and routed the index.html in flask
 next python list in html doc and routing it in flask.py
+
+## Day4 ##
+Added jinja2 in html now I am able to display all three cars which I want to show on my website

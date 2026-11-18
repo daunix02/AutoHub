@@ -7,7 +7,19 @@
 
 <p>One stop solution for all things for Automotive related things</p>
 
-<main>Car Picture</main>
+<main>
+        <h2>Available Cars</h2>
+
+    {% for car in cars %}
+
+        <div>
+            <h3>{{ car[0] }}</h3>
+            <p>Year: {{ car[1] }}</p>
+            <p>Price: {{ car[2] }}</p>
+        </div>
+
+    {% endfor %}
+</main>
 
 </body>
 </html>
