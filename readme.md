@@ -138,3 +138,20 @@ next python list in html doc and routing it in flask.py
 
 ## Day4 ##
 Added jinja2 in html now I am able to display all three cars which I want to show on my website
+
+## Day5 ##
+Added layout, website is ready in goodway.
+
+plan for the week from Monday
+
+Target: Sunday, 29 November
+7 hours total
+
+Day	Focus	Deliverable
+Mon 23	Finish AutoHub frontend	Stable application
+Tue 24	Application readiness	Dependencies, configuration, production startup
+Wed 25	Dockerfile	Build working image
+Thu 26	Container operations	Run, inspect, troubleshoot
+Fri 27	Docker Hub	Push and pull image
+Sat 28	Ubuntu deployment	Container running on VM
+Sun 29	Final verification	End-to-end deployment
