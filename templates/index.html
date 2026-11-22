@@ -12,19 +12,25 @@
 <p>One stop solution for all things for Automotive related things</p>
 
 <main>
-        <h2>Available Cars</h2>
+    <h2>Available Cars</h2>
 
-    {% for car in cars %}
+    <div class="car-container">
 
-        <div>
+        {% for car in cars %}
+
+        <div class="car-card">
+
+            <img src="{{ url_for('static', filename='images/' + car[3]) }}">
+
             <h3>{{ car[0] }}</h3>
             <p>Year: {{ car[1] }}</p>
             <p>Price: {{ car[2] }}</p>
-        <img src="{{ url_for('static', filename='images/nissangtr.jpg') }}">
-        <img src="{{ url_for('static', filename='images/mustang.jpg') }}">
-        <img src="{{ url_for('static', filename='images/bmw.jpg') }}">
 
-    {% endfor %}
+        </div>
+
+        {% endfor %}
+
+    </div>
 </main>
 <nav>links</nav>
 </body>
