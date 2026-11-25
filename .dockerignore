@@ -1,0 +1,26 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Git files
+.git/
+.gitignore
+
+# Environment and secret files
+.env
+.env.*
+
+# macOS files
+.DS_Store
+
+# Editor files
+.vscode/
+
+# Test and coverage files
+.pytest_cache/
+.coverage
