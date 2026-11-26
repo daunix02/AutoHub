@@ -1,0 +1,197 @@
+# -Linux Server Health Reporter
+
+## Project Overview
+
+The Linux Server Health Reporter is a Bash-based utility designed to collect basic Linux server information and generate a structured health report.
+
+The project simulates a basic operational task performed by DevOps and Linux system administrators.
+
+## Day 1 — Project Initialization and System Discovery
+
+### Objective
+Set up the project structure and explore Linux commands required to collect server health information.
+
+### Project Structure
+
+```text
+linux-health-reporter/
+├── scripts/
+│   └── health_report.sh
+├── reports/
+└── docs/
+    └── README.md
+```
+
+### Activities Completed
+
+- Created the project directory structure.
+- Prepared the Bash script location.
+- Prepared the reports directory.
+- Created project documentation.
+- Explored Linux system information commands.
+- Investigated operating system, kernel, CPU, memory, disk, and network information.
+
+### Commands Explored
+
+| Command | Information collected |
+|---|---|
+| `hostname` | Server hostname |
+| `hostnamectl` | Host and operating system details |
+| `uname -r` | Kernel version |
+| `cat /etc/os-release` | Linux distribution information |
+| `lscpu` | CPU information |
+| `free -h` | Memory usage |
+| `df -h` | Disk space |
+| `ip addr` | Network interfaces and addresses |
+
+### Engineering Outcome
+
+Established the foundation for a reusable Linux server health-reporting utility.
+
+### Pending Work
+
+- Implement system information collection in Bash.
+- Generate timestamped health reports.
+- Add disk and memory warning thresholds.
+- Handle command failures and missing utilities.
+- Test the script under different conditions.
+
+### Key Learning
+
+Linux provides several command-line utilities for inspecting system resources. Bash can combine these utilities into a repeatable operational tool.
+
+---------------- DAY2. NOV6 , 2026 ----------
+# Day 2 – Bash Scripting Basics
+
+**Objective:** Build an interactive Linux Server Health Reporter using Bash.
+
+### Concepts Learned
+- **Variables:** Store and reuse values.
+- **Command substitution:** Execute commands using `$(command)`.
+- **Arrays:** Store multiple menu options.
+- **read:** Accept user input.
+- **select:** Create an interactive menu.
+- **case:** Execute actions based on user selection.
+- **break:** Exit a loop.
+
+### Linux Commands Practised
+- `date` – Current date and time.
+- `hostname` – Server hostname.
+- `lscpu` – CPU information.
+- `free -h` – Memory usage.
+- `df -h` – Disk usage.
+- `uptime` – System uptime.
+
+### Practical Work
+- Created a Bash script.
+- Displayed system information.
+- Created an interactive menu using arrays and `select`.
+- Started handling menu selections using `case`.
+- Implemented an exit option.
+
+### Pending
+- Complete all menu options.
+- Format system information neatly.
+- Add health status indicators.
+- Generate timestamped reports.
+
+**Key Learning:** Bash scripting helps automate repetitive Linux administration tasks.
+
+
+-------- DAY3 -------
+Added PS3 prompt to display the options
+
+--------- DAY4 -----
+## Conclusion
+
+Successfully developed a Bash-based Linux Server Health Reporter that collects system information and generates timestamped health reports.
+
+This project provided hands-on experience with Linux commands, Bash scripting, automation, file handling, and report generation.
+
+**Future Improvements:** Add health status alerts, error handling, and automated report scheduling.
+
+
+--------DAY5--------
+
+Adde github ssh key and cloned to vm
+
+
+----DAY6----------
+Objective: Understand Linux processes and begin process investigation using Bash.
+
+Concepts learned:
+- Program vs process.
+- PID (Process ID).
+- Applications can run multiple processes.
+- Basic process monitoring.
+Commands practised:
+- ps – View current terminal processes.
+- ps aux – View all running processes.
+- grep "$USER" – Filter processes by username.
+- echo "$USER" – Display current usernam.
+
+--- DAY7 -----
+### Linux Process Investigation
+
+- Practised process monitoring using `ps aux` and `top`.
+- Identified top CPU and memory-consuming processes using `sort` and `head`.
+- Integrated process monitoring into the Linux Health Reporter.
+
+**Tomorrow:** Learn process states, PID, PPID, foreground/background processes, and process signals.
+
+
+### Linux Process Management – Day 8
+
+- Learned Linux process states: `R`, `S`, `D`, `T`, `Z`.
+- Understood PID and PPID.
+- Explored process status indicators: `s`, `l`, `N`, `+`.
+- Practised `ps aux` and `ps -ef`.
+- Learned Bash variables `$$` (current shell PID) and `$PPID` (parent PID).
+
+**Tomorrow:** Learn foreground/background processes, `&`, `jobs`, `bg`, `fg`, and process signals (`SIGTERM`, `SIGKILL`, `SIGHUP`).
+
+------ DAY 9 -------
+### Linux Process Management – Day 4
+
+- Practised foreground and background processes.
+- Used `&` to run processes in the background.
+- Used `jobs` to list background jobs.
+- Used `fg` to bring jobs to the foreground.
+- Used `Ctrl + Z` to suspend processes.
+- Used `bg` to resume suspended processes in the background.
+- Verified that moving a process between foreground and background does not change its PID.
+
+**Key Learning:** Foreground and background execution changes job control, not the process identity.
+
+**Next:** Learn process signals – `SIGTERM`, `SIGKILL`, and `SIGHUP`
+
+------ DAY10 -----
+Journctl to check service logs
+
+---- DAY11 ---
+Learn to identify failed services, inspect their logs, and distinguish runtime status from boot-time configuration.
+
+------- DAY12 ------
+Learned to check the logs in ls -lh /var/log/ > this will give me all the files of logs.  I can check the authentication logs in auth.log
+
+
+---- DAY13 ------
+
+Leanred to check the storeage . lsblk > this shows me all the disks partitions and their relationships.
+
+
+--- DAY14 ---
+Learned to check the ssh connection using ssh client connectio
+
+
+--- DAY15 ---
+sudo grep -v '^#' /etc/ssh/sshd_config | grep -v '^$'
+
+
+-- DAY16 ---
+ssh connections. tomorrow file transfer
+
+-- DAY17 --
+Editing the file using SFTP
+get to fetch
+put to upload
